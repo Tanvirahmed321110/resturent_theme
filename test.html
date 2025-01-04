@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Scrollbar</title>
+        <style>
+            body {
+                height: 200vh;
+                /* Add extra height to enable scrolling */
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* WebKit Browsers (Chrome, Edge, Safari) */
+            body::-webkit-scrollbar {
+                width: 12px;
+                /* Width of the scrollbar */
+            }
+
+            body::-webkit-scrollbar-track {
+                background: #2e2323;
+                /* Background color of the scrollbar track */
+            }
+
+            body::-webkit-scrollbar-thumb {
+                background: #007bff;
+                /* Scrollbar thumb (handle) color */
+                border-radius: 10px;
+                /* Rounded corners for the scrollbar thumb */
+                border: 2px solid #693e3e;
+                /* Border around the thumb */
+            }
+
+            /* Firefox Scrollbar Styling */
+            body {
+                scrollbar-color: #007bff #f0f0f0;
+                /* Thumb color and track color */
+                scrollbar-width: thin;
+                /* Thin scrollbar */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Custom Scrollbar Example</h1>
+        <p>Scroll down to test the custom scrollbar style. The scrollbar thumb color is blue (#007bff), and the track
+            color is light gray (#f0f0f0).</p>
+        <p>To implement this style, you need to use <code>::-webkit-scrollbar</code> for WebKit browsers and
+            <code>scrollbar-color</code> for Firefox.
+        </p>
+    </body>
+
+</html>
