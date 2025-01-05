@@ -8,8 +8,8 @@
 
 :root {
     /*______  Color  ______ */
-    --primary-color: #0aad0a;
-    --primary-hover-color: #099309;
+    --primary-color: #FD831E;
+    --primary-hover-color: #dc7018;
     --secondary-color: #01293a;
     --orange: #ffc107;
     --blue: #016bf8;
@@ -36,7 +36,7 @@
     --fs-lg: 17px;
     --fs-xl: 22px;
     --fs-xxl: 32px;
-    --fs-xxxl: 44px;
+    --fs-xxxl: 58px;
 
 
 

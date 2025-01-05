@@ -38,7 +38,7 @@ h6 {
 h1 {
     font-size: var(--fs-xxxl);
     font-weight: var(--fw-700);
-    line-height: 50px;
+    line-height: 65px;
 }
 
 h2 {
@@ -398,6 +398,10 @@ button {
 
 .my-text-border {
     color: var(--border-color);
+}
+
+.my-text-border2 {
+    color: var(--border-color2);
 }
 
 .my-text-orange {

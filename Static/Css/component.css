@@ -25,6 +25,7 @@
     text-wrap: nowrap;
     display: block;
     visibility: hidden;
+    font-weight: 400;
 }
 
 .my-tooltip .show-text::after {
