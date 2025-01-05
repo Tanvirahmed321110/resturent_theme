@@ -732,6 +732,14 @@ button {
     margin-bottom: 24px;
 }
 
+.my-mb-7 {
+    margin-bottom: 28px;
+}
+
+.my-mb-8 {
+    margin-bottom: 32px;
+}
+
 /* Margin Right */
 .my-mr-1 {
     margin-right: 4px;
@@ -1277,7 +1285,7 @@ button {
     }
 
     .my-grid-sm-2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .my-grid-sm-3 {
@@ -1335,4 +1343,27 @@ button {
     .my-grid-6 {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.head p {
+    position: relative;
+    padding-top: 2px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.head p::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 1.5px;
+    background-color: var(--border-color2);
 }
