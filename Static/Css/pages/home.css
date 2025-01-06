@@ -374,7 +374,7 @@ header .right .nav-item.icon::after {
   ||     Popular Foods Slider     ||
 \*_________________________________*/
 .foods.pick-food-area {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -503,6 +503,36 @@ header .right .nav-item.icon::after {
     height: 20px;
     background-color: var(--secondary-color);
     transform: rotate(-46deg);
+}
+
+
+
+
+.blog-area .left.my-card {
+    box-shadow: unset;
+    background-color: var(--white-off);
+    padding: 24px;
+}
+
+.blog-area .left img {
+    border-radius: 8px;
+}
+
+.blog-area .blog-footer {
+    border-top: 1px solid var(--border-color2);
+    padding-top: 4px;
+}
+
+
+/*****  Right   *****/
+.blog-area .right .my-card {
+    background-color: var(--white-off);
+
+}
+
+.blog-area .right .my-card img {
+    border-radius: 12px;
+    max-width: 280px;
 }
 
 
