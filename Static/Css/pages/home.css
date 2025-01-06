@@ -10,7 +10,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 6;
     border-bottom: 1px solid var(--primary-hover-color);
     background-color: var(--primary-color);
 }
@@ -140,7 +140,6 @@ header .right .nav-item.icon::after {
 
 .swiper {
     width: 100%;
-    background-color: orange;
     padding: 22px;
     text-align: right;
 }
@@ -323,7 +322,7 @@ header .right .nav-item.icon::after {
     background-color: rgba(178, 175, 175, 0.458);
     width: calc(100% - 3px);
     height: 0;
-    transition: 1s linear;
+    transition: .6s linear;
     border: 2px solid var(--white);
     border-radius: 8px;
 }
@@ -337,6 +336,75 @@ header .right .nav-item.icon::after {
 
 
 
+/*_________________________*\
+  ||     Banner Section     ||
+\*_________________________*/
+.banner-1 {
+    background-image: url("../../images/banner_image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.banner-1-area {
+    height: 100%;
+}
+
+.banner-1-area .right {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-1-area .right img {
+    width: 400px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+/*_________________________________*\
+  ||     Popular Foods Slider     ||
+\*_________________________________*/
+.foods.pick-food-area {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.foods .swiper {
+    height: 500px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.foods .swiper-slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    max-width: 350px;
+}
+
+.food-slider .head {
+    margin-bottom: 0 !important;
+}
+
+.pick-food-area .swiper-slide .my-card {
+    border-color: var(--border-color2);
+}
+
+.pick-food-area .swiper-slide .my-card::after {
+    content: unset;
+}
 
 
 
@@ -345,8 +413,97 @@ header .right .nav-item.icon::after {
 
 
 
+/*_________________________________*\
+  ||     Testimonial Slider     ||
+\*_________________________________*/
+.testimonial-slider .swiper-wrapper {
+    width: 100%;
+}
+
+.customer-reviews .sigle-review {
+    padding: 12px;
+    max-width: 380px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-2);
+}
 
 
+/* reivew image */
+.customer-reviews .img-wrapper {
+    width: 145px;
+    max-height: 145px;
+    background-color: transparent;
+}
+
+.customer-reviews .img-wrapper img {
+    border-radius: 16px;
+    padding: 3px;
+    /* border: 1px solid var(--border-color2); */
+    width: 120px;
+    max-height: 96px;
+}
+
+
+/* review title */
+.sigle-review .title {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    color: var(--border-color2);
+}
+
+.sigle-review .starts i {
+    color: var(--primary-color);
+    margin-left: -3px;
+    font-size: var(--fs-xs);
+}
+
+.sigle-review .title h4 {
+    color: var(--white-off);
+}
+
+
+/* review desc */
+.sigle-review .desc {
+    background-color: var(--secondary-color);
+    padding: 22px;
+    padding-top: 12px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    line-height: 22px;
+    position: relative;
+    height: 230px;
+    max-height: 230px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--border-color2);
+    text-align: left;
+}
+
+.sigle-review .desc h3 {
+    font-size: calc(var(--fs-xl) - 2px);
+    color: var(--white);
+}
+
+.sigle-review .desc::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 112px;
+    width: 40px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    transform: rotate(-46deg);
+}
 
 
 
