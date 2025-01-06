@@ -222,7 +222,7 @@
     height: 100%;
     background-color: var(--primary-hover-color);
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: 2;
     transition: transform .8s linear, background .3s linear;
@@ -289,6 +289,12 @@
 .my-btn.my-btn-full {
     width: 100%;
 }
+.my-outline-btn{
+    background-color: transparent;
+    border: 1px solid var(--border-color2);
+    color: var(--secondary-color);
+}
+
 
 
 

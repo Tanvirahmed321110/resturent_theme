@@ -339,7 +339,8 @@ header .right .nav-item.icon::after {
 /*_________________________*\
   ||     Banner Section     ||
 \*_________________________*/
-.banner-1 {
+.banner-1,
+.subcribe {
     background-image: url("../../images/banner_image1.jpg");
     background-size: cover;
     background-position: center;
@@ -536,6 +537,49 @@ header .right .nav-item.icon::after {
 }
 
 
+
+
+
+
+
+.app-area .steps .sl {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+}
+.app-area .my-btn::after{
+    content: unset;
+}
+.app-area .my-btn:hover{
+    background-color: var(--primary-hover-color);
+    color: var(--white);
+}
+
+
+
+
+.subcribe{
+    height: 250px;
+}
+
+.subcirbe-field{
+    background-color: var(--white);
+    padding: 6px 12px;
+    border-radius: 40px;
+    width: 400px;
+    position: relative;
+}
+.subcirbe-field .my-secendary-btn{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.subcirbe-field input{
+    border: none;
+}
 
 @media (max-width:991px) {
 
