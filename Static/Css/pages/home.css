@@ -257,6 +257,14 @@ header .right .nav-item.icon::after {
     margin: 0 auto;
 }
 
+.pick-food-area .my-grid-3 {
+    display: none;
+}
+
+.pick-food-area .my-grid-3.active {
+    display: grid;
+}
+
 .pick-food-area .my-card img {
     border-radius: 6px;
     padding: 3px;
