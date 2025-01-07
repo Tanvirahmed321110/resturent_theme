@@ -157,7 +157,7 @@ button {
 }
 
 .section-margin {
-    margin: 35px 0;
+    margin: 45px 0;
 }
 
 .checkbox {
@@ -1217,6 +1217,10 @@ button {
 
 /*_______  responsive for tablet divece  ________ */
 @media (max-width:991px) {
+    h1 {
+        line-height: 49px;
+    }
+
     .my-flex-md-column {
         flex-direction: column;
     }

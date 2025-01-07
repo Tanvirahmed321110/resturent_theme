@@ -289,7 +289,8 @@
 .my-btn.my-btn-full {
     width: 100%;
 }
-.my-outline-btn{
+
+.my-outline-btn {
     background-color: transparent;
     border: 1px solid var(--border-color2);
     color: var(--secondary-color);
@@ -308,6 +309,8 @@
 .my-input-control {
     position: relative;
     margin: 5px 0;
+    width: 100%;
+    max-width: 450px;
 }
 
 .my-input-control input {
@@ -595,13 +598,15 @@
   ||    Menu Icon Create Start     ||
 \*______________________________________*/
 .menu-icon {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 20px;
     cursor: pointer;
 }
+
+
 
 .menu-icon span {
     display: block;

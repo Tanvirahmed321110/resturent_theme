@@ -1,106 +1,5 @@
 @import '../variable.css';
 
-/*_______________________________*\
-  ||     Header Start  Here     ||
-\*_______________________________*/
-
-header {
-    color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 6;
-    border-bottom: 1px solid var(--primary-hover-color);
-    background-color: var(--primary-color);
-}
-
-header .logo h2 {
-    color: var(--seconday-color);
-}
-
-
-header .my-container {
-    padding: 16px;
-}
-
-
-
-.search .my-input-control {
-    width: 380px;
-    border-radius: 44px;
-    height: 54px;
-    display: flex;
-    background-color: var(--white-off);
-    /* overflow: hidden; */
-}
-
-.search .my-btn {
-    position: absolute;
-    right: 5px;
-    border-radius: 44px;
-    top: 5px;
-}
-
-.search input {
-    width: 100%;
-    border-color: transparent;
-    border-radius: 44px;
-
-}
-
-.search input::placeholder {
-    font-weight: 400;
-    color: var(--gray);
-}
-
-
-
-
-/*****  Header Right  *****/
-header .right .nav-item {
-    padding: 4px 6px;
-    cursor: pointer;
-    position: relative;
-}
-
-header .right .nav-item:hover {
-    background-color: var(--secondary-color);
-    border-radius: 4px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-/* header .right .nav-item::after {
-    content: '';
-    position: absolute;
-    left: 0%;
-    bottom: 0px;
-    background-color: var(--secondary-color);
-    width: 0;
-    height: 1.5px;
-    transition: .03s;
-}
-
-header .right .nav-item:hover::after {
-    right: 0;
-    width: 100%;
-} */
-
-header .right .nav-item.icon {
-    font-size: var(--fs-lg);
-}
-
-header .right .nav-item.icon::after {
-    content: unset;
-}
-
-
-
-
-
-
-
 
 /*_________________________*\
   ||     Hero Section     ||
@@ -121,6 +20,7 @@ header .right .nav-item.icon::after {
 
 .hero-section .hero-desc {
     max-width: 400px;
+    width: 100%;
     word-spacing: 1px;
     letter-spacing: .2px;
     font-weight: var(--fw-400);
@@ -156,6 +56,10 @@ header .right .nav-item.icon::after {
 
 
 
+
+/*_________________________*\
+  ||   category Section     ||
+\*_________________________*/
 .category-area {
     width: 1000px;
     margin: 0 auto;
@@ -509,6 +413,12 @@ header .right .nav-item.icon::after {
 
 
 
+
+
+
+/*_________________________*\
+  ||    Blog Section     ||
+\*_________________________*/
 .blog-area .left.my-card {
     box-shadow: unset;
     background-color: var(--white-off);
@@ -542,6 +452,10 @@ header .right .nav-item.icon::after {
 
 
 
+
+/*_________________________*\
+  ||      Ap  Section     ||
+\*_________________________*/
 .app-area .steps .sl {
     width: 50px;
     height: 50px;
@@ -549,10 +463,12 @@ header .right .nav-item.icon::after {
     background-color: var(--primary-color);
     color: var(--white) !important;
 }
-.app-area .my-btn::after{
+
+.app-area .my-btn::after {
     content: unset;
 }
-.app-area .my-btn:hover{
+
+.app-area .my-btn:hover {
     background-color: var(--primary-hover-color);
     color: var(--white);
 }
@@ -560,47 +476,121 @@ header .right .nav-item.icon::after {
 
 
 
-.subcribe{
+
+
+
+
+/*_________________________*\
+  ||   subcribe Section     ||
+\*_________________________*/
+.subcribe {
     height: 250px;
 }
 
-.subcirbe-field{
+.subcirbe-field {
     background-color: var(--white);
     padding: 6px 12px;
     border-radius: 40px;
     width: 400px;
     position: relative;
 }
-.subcirbe-field .my-secendary-btn{
+
+.subcirbe-field .my-secendary-btn {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
 }
 
-.subcirbe-field input{
+.subcirbe-field input {
     border: none;
 }
 
+
+
+
+
+
+
+
+
+
 @media (max-width:991px) {
+    .hero-section {
+        height: 800px;
+    }
+
+
+    .hero-area.my-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .hero-section .left {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-section .left .hero-desc {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .hero-section .search {
+        margin-top: 10px;
+    }
+
+    .hero-section .search .my-input-control {
+        width: 100%;
+        min-width: 300px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-section .right {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        border-radius: 12px;
+        overflow: hidden;
+    }
 
     /*****  Category  *****/
     .category-area {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         min-width: 350px;
         gap: 12px;
-        justify-content: unset;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .category-area .my-card {
-        max-width: 150px;
-        padding: 12px;
+        min-width: 150px;
+        max-width: 200px;
     }
 
     .category-area .my-card img {
         width: 80px;
     }
+
+    /* center align */
+    /* .category-area .my-card:last-child:nth-child(odd) {
+        grid-column: span 2;
+        justify-self: center;
+        width: 300px;
+    } */
 
 
 
@@ -616,5 +606,108 @@ header .right .nav-item.icon::after {
 
     .pick-buttons img {
         width: 28px;
+    }
+
+
+    /*****  Counter  *****/
+    .counter-area .left img {
+        max-width: 500px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+
+    /*****  order steps *****/
+    .order-steps {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .order-steps .step {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+
+    /*****  counter  *****/
+    .counter-area .content {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .counters .item {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*****  counter  *****/
+    .app-area .left img {
+        max-width: 400px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .app-area .right {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .subcirbe-field {
+        max-width: 450px;
+        min-width: 330px;
+        width: 100%;
+    }
+
+    .subcirbe-field .my-btn {
+        bottom: 0;
+    }
+
+    .blog-area .right .my-card {
+        flex-direction: column;
+    }
+
+    .blog-area .right .my-card img {
+        max-width: 100%;
+    }
+
+
+    /*****  Banner  *****/
+    .banner-1 {
+        height: 550px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-1 .my-fit-content {
+        margin: 12px auto;
+    }
+
+    .banner-1 .right img {
+        max-width: 433px;
+        width: 100%;
+    }
+
+    .popular-products {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:580px) {
+    .order-steps .step {
+        max-width: 170px;
+    }
+
+    .subcirbe-field .my-btn {
+        bottom: 0;
+    }
+
+    .subcribe-area h2 {
+        text-align: center;
     }
 }
