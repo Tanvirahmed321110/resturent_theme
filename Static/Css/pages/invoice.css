@@ -1,0 +1,16 @@
+body {
+    background-color: var(--border-color);
+}
+
+/* invoice */
+.invoice {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: var(--white);
+    width: 100%;
+    padding: 40px;
+}
+
+table tr:last-child {
+    border-bottom: 0;
+}

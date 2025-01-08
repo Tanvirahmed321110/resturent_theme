@@ -429,6 +429,10 @@
     border-radius: 8px;
 }
 
+.blog-area .left h3 {
+    transition: .25s linear;
+}
+
 .blog-area .blog-footer {
     border-top: 1px solid var(--border-color2);
     padding-top: 4px;
@@ -439,6 +443,16 @@
 .blog-area .right .my-card {
     background-color: var(--white-off);
 
+}
+
+.blog-area .right .my-card h3 {
+    font-size: var(--fs-lg);
+    transition: .25s linear;
+}
+
+.blog-area .right .my-card h3:hover,
+.blog-area .left h3:hover {
+    color: var(--primary-color);
 }
 
 .blog-area .right .my-card img {
@@ -472,6 +486,8 @@
     background-color: var(--primary-hover-color);
     color: var(--white);
 }
+
+
 
 
 
@@ -669,6 +685,8 @@
         bottom: 0;
     }
 
+
+    /*****  blog  *****/
     .blog-area .right .my-card {
         flex-direction: column;
     }

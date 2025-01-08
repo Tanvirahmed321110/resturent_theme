@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     font-size: var(--fs-xl);
-    line-height: 25px;
+    line-height: 29px;
 }
 
 h4 {
@@ -144,8 +144,27 @@ button {
 
 
 
+table {
+    border-collapse: collapse;
+    padding: 0 10px;
+    width: 100%;
+}
 
+th {
+    font-weight: var(--fw-700);
+    background-color: var(--border-color);
+}
 
+th,
+td {
+    padding: 13px 8px;
+    color: var(--secondary-hover);
+}
+
+tr {
+    border-bottom: 1px solid var(--border-color);
+    padding: 3px 10px;
+}
 
 
 /*____________  Reused Class  ____________*/
@@ -391,6 +410,14 @@ button {
 
 .my-text-primary {
     color: var(--primary-color);
+}
+
+.my-text-secondary {
+    color: var(--secondary-color);
+}
+
+.my-text-green {
+    color: var(--green);
 }
 
 .my-text-navy {

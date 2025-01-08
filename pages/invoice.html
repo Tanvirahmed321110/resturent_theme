@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invoice_Page</title>
+        <link rel="stylesheet" href="../Static/Css/common.css">
+        <link rel="stylesheet" href="../Static/Css/pages/invoice.css">
+    </head>
+
+
+    <body class="invoice-page">
+        <header>
+            <div class="my-container">
+                <div class="my-flex-between header-area my-gap-10">
+                    <div class="left">
+                        <a class="logo" href="index.html">
+                            <h2>Resturent.</h2>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Mobile Menu -->
+                    <div class="menu-icon my-d-none  my-d-sm-block" id="menuIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+                    <!-- right -->
+                    <div class="right" id="right-sidebar">
+                        <ul class="my-d-flex nav my-align-center my-gap-3">
+                            <li>
+                                <a class="nav-item" href="#">Home </a>
+                            </li>
+                            <li>
+                                <a class="nav-item" href="#">About </a>
+                            </li>
+                            <li>
+                                <a class="nav-item" href="#">Menu </a>
+                            </li>
+                            <li>
+                                <a class="nav-item" href="#">Tracking </a>
+                            </li>
+                            <li>
+                                <a class="nav-item" href="#">Blog </a>
+                            </li>
+                            <li>
+                                <a class="nav-item" href="#">Contact </a>
+                            </li>
+                            <li>
+                                <span class="nav-item icon my-tooltip">
+                                    <i class="fa-regular fa-user my-fw-bolder"></i>
+
+                                    <!-- hover text -->
+                                    <div class="show-text">user login</div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="nav-item icon my-tooltip">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    <div class="show-text">shop cart</div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section class="my-mt-100">
+            <div class="my-container">
+                <div class="invoice my-mt-0">
+
+                    <!--*****  Top   *****-->
+                    <div class="top my-flex-between">
+                        <h3>Thank You <span class="my-text-primary">Tanvir</span>, <div>Here Your Order Details</div>
+                        </h3>
+                        <div>
+                            <button class="my-btn my-primary-btn">
+                                <span><i class="fa-solid fa-print"></i> Print</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--*****  Address   *****-->
+                    <div class="address my-flex-between my-mt-100">
+
+                        <!-- order -->
+                        <div class="order">
+                            <ul class="my-flex-column my-gap-2">
+                                <li class="my-text-secondary ">
+                                    <div class="my-d-flex my-gap-2">Order No: <span
+                                            class="my-fw-bold">#4454E45520445</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">
+                                        Order Placed at: <span class="my-fw-bold">12/12/2024, 06.22 PM</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">Order Delivered at: <span
+                                            class="my-fw-bold">12/12/2024, 06.22 PM</span></div>
+                                </li>
+                                <li>
+                                    <div class="my-d-flex my-gap-2">Order Status: <span
+                                            class="my-fw-bolder my-text-green">Delivered</span></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="address">
+                            <ul class="my-flex-column my-gap-2">
+                                <li class="my-text-secondary ">
+                                    <div class="my-d-flex my-gap-2">Delivery To:
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="my-fw-bolder my-text-primary">
+                                        Md Tanvir Ahmed
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        House 12, Block A,Mirpur 10,Mirpur
+                                    </p>
+                                    <p>
+                                        Dhaka Bangladesh
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="order-from my-mt-50">
+                        <div>
+                            <p>Order from</p>
+                            <h5 class="my-fw-bold">MD Hasal Ali</h5>
+                            <p>Shop 22, Model Town , Gulshan-2 , Dhaka</p>
+                        </div>
+
+                        <table class="my-my-4 my-w-100">
+                            <thead>
+                                <tr>
+                                    <th class="my-text-left">Item Name</th>
+                                    <th class="my-text-right">Quantity</th>
+                                    <th class="my-text-right">Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="my-text-left">Burger sm</td>
+                                    <td class="my-text-right">01</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>122
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">Mojo 250ml</td>
+                                    <td class="my-text-right">02</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">sos</td>
+                                    <td class="my-text-right">05</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>20
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">pizza</td>
+                                    <td class="my-text-right">01</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left">7up</td>
+                                    <td class="my-text-right">02</td>
+                                    <td class="my-text-right">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Item Total: </td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>232
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Delivary Charge:</td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>60
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fw-bold">Discount</td>
+                                    <td class="my-text-right my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-xs"></i>00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="my-text-left"></td>
+                                    <td class="my-text-right my-fs-lg my-fw-bold">Grand Total:</td>
+                                    <td class="my-text-right my-fs-lg my-fw-bold">
+                                        <i class="fa-solid fa-bangladeshi-taka-sign my-fs-sm"></i>392
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--**************  Footer Section  ************* -->
+        <footer class=" footer my-mt-10">
+            <!--*****  Footer Top  *****-->
+            <div class="footer-top">
+                <div class="my-container">
+                    <div class="footer-top-area my-grid-4 my-grid-md-2 my-grid-sm-1 my-gap-6">
+                        <div>
+                            <h2>Logo</h2>
+                            <p class="my-mt-6">
+                                Curabitur posuere felis in massa pulvinar, nec mollis nibh eleifend. Maecenas turpis
+                                mi. Vivamus pulvinar lobortis
+                                vehicula pellentesque
+                            </p>
+
+
+                            <!-- social media -->
+                            <ul class="social my-d-flex my-gap-1 my-mt-4">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>Pages</h3>
+                            <div class="my-d-flex my-gap-8 links my-mt-6">
+                                <ul class="my-flex-column my-gap-3">
+                                    <li>
+                                        <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                                <ul class="my-flex-column my-gap-3">
+                                    <li class="footer-nav">
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span> Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- image gallery -->
+                        <div>
+                            <h3>Instagram Gallery</h3>
+                            <ul class="my-flex-column img-gallery my-grid-3 my-gap-3 my-mt-6">
+                                <li>
+                                    <img src="../Static/images/food_01.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_02.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_05.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_01.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_05.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_04.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                                <li>
+                                    <img src="../Static/images/food_02.jpg" alt="">
+                                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Contact US -->
+                        <div>
+                            <h3>Contact Us</h3>
+                            <ul class="my-flex-column  my-gap-5 my-mt-6 ">
+                                <li class="my-d-flex my-gap-3 my-align-start">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        203, Envato ka Yents, Behind Alis <div>
+                                            Str, Melbourne, Australia.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="my-d-flex my-gap-3 my-align-start">
+                                    <div>
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+
+                                    <div>
+                                        <a href="#">017455 56566</a>
+                                        <a href="#">017455 56566</a>
+                                    </div>
+                                </li>
+                                <li class="my-d-flex my-gap-3 my-align-start">
+                                    <div>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <a href="#">restuent@gmail.com</a>
+                                        <a href="#">adminresturen@gmail.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--*****  Footer Bottom  *****-->
+            <div class="footer-bottom">
+                <div class="my-container">
+                    <div class="footer-bottom-area my-flex-between my-flex-sm-column my-gap-4">
+                        <div>
+                            <p class="my-fs-xs">
+                                copyright &copy;<a class="my-text-primary" href="https://hsblco.com/">
+                                    HSBLCO</a>
+                                All
+                                rights reserved.</p>
+                        </div>
+
+                        <div>
+                            <ul class="my-d-flex my-gap-3 my-align-center footer-bottom-right">
+                                <li>
+                                    <a href="#">cookie</a>
+                                </li>
+                                <li>
+                                    <a href="#">privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href=" #">home</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
